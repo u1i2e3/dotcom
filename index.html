@@ -2,18 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou Color Showcase</title>
+  <title>aeiou Font Explorer</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Load 100 Google Fonts dynamically -->
+  <script>
+    const fonts = [
+      "Poppins:600", "Montserrat:600", "Raleway:600", "Playfair+Display:700", "Cinzel:700",
+      "Cormorant+Garamond:600", "Fredoka:600", "Quicksand:600", "Bebas+Neue", "Anton",
+      "Archivo+Black", "Abril+Fatface", "Exo+2:600", "Josefin+Sans:600", "Barlow:600",
+      "Alata:600", "Libre+Baskerville:400", "Major+Mono+Display", "Sora:600", "Rubik:600",
+      "Merriweather:700", "Oswald:600", "Nunito:600", "Work+Sans:600", "Karla:600",
+      "Roboto+Slab:600", "Dosis:600", "Oxygen:600", "Teko:600", "Staatliches",
+      "Yanone+Kaffeesatz:600", "Khula:600", "Comfortaa:600", "Mukta:600", "PT+Sans+Caption",
+      "Varela+Round", "Saira+Stencil+One", "Amatic+SC:700", "Bree+Serif", "Cairo:600",
+      "Fira+Sans:600", "Inconsolata", "Jost:600", "Kanit:600", "Lexend:600",
+      "M PLUS Rounded 1c:700", "Nunito+Sans:600", "Pacifico", "Questrial", "Righteous",
+      "Satisfy", "Spectral:600", "Tailwind:600", "Zilla+Slab:600", "Vesper+Libre:600",
+      "Yeseva+One", "Actor", "BenchNine:700", "Chela+One", "Domine:600",
+      "EB+Garamond:600", "Fjalla+One", "Glegoo", "Heebo:600", "Imprima",
+      "Jura:600", "Kaushan+Script", "Lato:600", "Megrim", "News+Cycle:600",
+      "Oranienbaum", "Pathway+Extreme", "Recursive:600", "Secular+One", "Tinos:600",
+      "Ubuntu:600", "Vollkorn:600", "Work+Sans:700", "Yantramanav:600",
+      "Zilla+Slab:700", "Acme", "Bangers", "Concert+One", "Dancing+Script",
+      "Eagles+Lakes", "Fascinate+Inline", "Galada", "Hanalei", "Italianno",
+      "Just+Another+Hand", "Kelly+Slab", "Loved+by+the+King", "Monoton",
+      "Neonderthaw", "Odibee+Sans", "Passion+One", "Quattrocento:600",
+      "Ranchers", "Shojumaru", "Unica+One", "Viga"
+    ];
+    document.write(`<link href="https://fonts.googleapis.com/css?family=${fonts.join('|').replace(/ /g,'+')}&display=swap" rel="stylesheet">`);
+  </script>
 
   <style>
     body {
@@ -24,75 +41,55 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      gap: 40px;
+      justify-content: flex-start;
+      padding-top: 50px;
     }
 
     .title {
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: bold;
       letter-spacing: 0.3rem;
       text-align: center;
+      margin-bottom: 30px;
     }
 
-    /* Font Styles */
-    .poppins      { font-family: 'Poppins', sans-serif; }
-    .montserrat   { font-family: 'Montserrat', sans-serif; }
-    .raleway      { font-family: 'Raleway', sans-serif; }
-    .playfair     { font-family: 'Playfair Display', serif; }
-    .cinzel       { font-family: 'Cinzel', serif; }
-    .cormorant    { font-family: 'Cormorant Garamond', serif; }
-    .fredoka      { font-family: 'Fredoka', sans-serif; }
-    .quicksand    { font-family: 'Quicksand', sans-serif; }
-    .bebas        { font-family: 'Bebas Neue', sans-serif; }
+    .a { color: #FF0000; } /* Red */
+    .e { color: #FFFF00; } /* Yellow */
+    .i { color: #00FF00; } /* Green */
+    .o { color: #FF00FF; } /* Magenta */
+    .u { color: #0000FF; } /* Blue */
 
-    /* Color Classes for Each Letter */
-    .a { color: #FF0000; }   /* Red */
-    .e { color: #FFFF00; }   /* Yellow (Red + Green) */
-    .i { color: #00FF00; }   /* Green */
-    .o { color: #FF00FF; }   /* Magenta (Red + Blue) */
-    .u { color: #0000FF; }   /* Blue */
+    select {
+      font-size: 1.2rem;
+      padding: 5px;
+      margin-bottom: 40px;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Each title version with colored vowels -->
-  <div class="title poppins">
+  <select id="fontSelector">
+    <option disabled selected>Select a font</option>
+  </select>
+
+  <div id="logo" class="title">
     <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="title montserrat">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
+  <script>
+    const select = document.getElementById('fontSelector');
+    fonts.forEach(f => {
+      const name = f.split(':')[0].replace(/\+/g, ' ');
+      const opt = document.createElement('option');
+      opt.value = name;
+      opt.textContent = name;
+      select.appendChild(opt);
+    });
 
-  <div class="title raleway">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="title playfair">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="title cinzel">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="title cormorant">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="title fredoka">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="title quicksand">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="title bebas">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
+    select.addEventListener('change', () => {
+      document.getElementById('logo').style.fontFamily = `"${select.value}", sans-serif`;
+    });
+  </script>
 
 </body>
 </html>
