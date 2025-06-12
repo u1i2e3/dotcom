@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou – Professional Font Showcase</title>
+  <title>aeiou Font Comparison</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Sora:wght@600&family=Jost:wght@600&family=M+PLUS+Rounded+1c:wght@700&family=Barlow:wght@600&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Sora:wght@600&family=Jost:wght@700&family=M+PLUS+Rounded+1c:wght@800&family=Barlow:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -16,59 +16,65 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 40px;
+      gap: 50px;
     }
 
     .font-sample {
-      font-size: 3.5rem;
+      font-size: 4rem;
       font-weight: bold;
-      letter-spacing: 0.3rem;
+      letter-spacing: 0.2rem;
       text-align: center;
     }
 
     .label {
       color: #888;
-      font-size: 1rem;
-      margin-bottom: -20px;
+      font-size: 1.1rem;
+      margin-bottom: -15px;
+      font-style: italic;
     }
 
-    /* Color Logic */
-    .a { color: #FF0000; }   /* Red */
-    .e { color: #FFFF00; }   /* Yellow */
-    .i { color: #00FF00; }   /* Green */
-    .o { color: #FF00FF; }   /* Magenta */
-    .u { color: #0000FF; }   /* Blue */
+    .a { color: #FF0000; }
+    .e { color: #FFFF00; }
+    .i { color: #00FF00; }
+    .o { color: #FF00FF; }
+    .u { color: #0000FF; }
+
+    /* Force display if fonts fail */
+    @font-face {
+      font-family: fallback;
+      src: local("Arial");
+    }
   </style>
 </head>
 <body>
 
   <div class="label">Nunito Sans</div>
-  <div class="font-sample" style="font-family: 'Nunito Sans', sans-serif;">
+  <div class="font-sample" style="font-family: 'Nunito Sans', fallback, sans-serif;">
     <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
   <div class="label">Sora</div>
-  <div class="font-sample" style="font-family: 'Sora', sans-serif;">
+  <div class="font-sample" style="font-family: 'Sora', fallback, sans-serif;">
     <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
   <div class="label">Jost</div>
-  <div class="font-sample" style="font-family: 'Jost', sans-serif;">
+  <div class="font-sample" style="font-family: 'Jost', fallback, sans-serif;">
     <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
   <div class="label">M PLUS Rounded 1c</div>
-  <div class="font-sample" style="font-family: 'M PLUS Rounded 1c', sans-serif;">
+  <div class="font-sample" style="font-family: 'M PLUS Rounded 1c', fallback, sans-serif;">
     <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
   <div class="label">Barlow</div>
-  <div class="font-sample" style="font-family: 'Barlow', sans-serif;">
+  <div class="font-sample" style="font-family: 'Barlow', fallback, sans-serif;">
     <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
   <div class="label">Quicksand</div>
-  <div class="font-sample" style="font-family: 'Quicksand', sans-serif;">
+  <div class="font-sample" style="font-family: 'Quicksand', fallback, sans-serif;">
     <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
