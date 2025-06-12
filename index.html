@@ -2,92 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou Font Explorer</title>
+  <title>100 Fonts AEIOU Showcase</title>
 
-  <!-- Load 100 Google Fonts dynamically -->
-  <script>
-    const fonts = [
-      "Poppins:600", "Montserrat:600", "Raleway:600", "Playfair+Display:700", "Cinzel:700",
-      "Cormorant+Garamond:600", "Fredoka:600", "Quicksand:600", "Bebas+Neue", "Anton",
-      "Archivo+Black", "Abril+Fatface", "Exo+2:600", "Josefin+Sans:600", "Barlow:600",
-      "Alata:600", "Libre+Baskerville:400", "Major+Mono+Display", "Sora:600", "Rubik:600",
-      "Merriweather:700", "Oswald:600", "Nunito:600", "Work+Sans:600", "Karla:600",
-      "Roboto+Slab:600", "Dosis:600", "Oxygen:600", "Teko:600", "Staatliches",
-      "Yanone+Kaffeesatz:600", "Khula:600", "Comfortaa:600", "Mukta:600", "PT+Sans+Caption",
-      "Varela+Round", "Saira+Stencil+One", "Amatic+SC:700", "Bree+Serif", "Cairo:600",
-      "Fira+Sans:600", "Inconsolata", "Jost:600", "Kanit:600", "Lexend:600",
-      "M PLUS Rounded 1c:700", "Nunito+Sans:600", "Pacifico", "Questrial", "Righteous",
-      "Satisfy", "Spectral:600", "Tailwind:600", "Zilla+Slab:600", "Vesper+Libre:600",
-      "Yeseva+One", "Actor", "BenchNine:700", "Chela+One", "Domine:600",
-      "EB+Garamond:600", "Fjalla+One", "Glegoo", "Heebo:600", "Imprima",
-      "Jura:600", "Kaushan+Script", "Lato:600", "Megrim", "News+Cycle:600",
-      "Oranienbaum", "Pathway+Extreme", "Recursive:600", "Secular+One", "Tinos:600",
-      "Ubuntu:600", "Vollkorn:600", "Work+Sans:700", "Yantramanav:600",
-      "Zilla+Slab:700", "Acme", "Bangers", "Concert+One", "Dancing+Script",
-      "Eagles+Lakes", "Fascinate+Inline", "Galada", "Hanalei", "Italianno",
-      "Just+Another+Hand", "Kelly+Slab", "Loved+by+the+King", "Monoton",
-      "Neonderthaw", "Odibee+Sans", "Passion+One", "Quattrocento:600",
-      "Ranchers", "Shojumaru", "Unica+One", "Viga"
-    ];
-    document.write(`<link href="https://fonts.googleapis.com/css?family=${fonts.join('|').replace(/ /g,'+')}&display=swap" rel="stylesheet">`);
-  </script>
+  <!-- Load 100 Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Montserrat:wght@600&family=Raleway:wght@600&family=Playfair+Display:wght@700&family=Cinzel:wght@700&family=Cormorant+Garamond:wght@600&family=Fredoka:wght@600&family=Quicksand:wght@600&family=Bebas+Neue&family=Anton&family=Archivo+Black&family=Abril+Fatface&family=Exo+2:wght@600&family=Josefin+Sans:wght@600&family=Barlow:wght@600&family=Alata&family=Libre+Baskerville&family=Major+Mono+Display&family=Sora:wght@600&family=Rubik:wght@600&family=Merriweather:wght@700&family=Oswald:wght@600&family=Nunito:wght@600&family=Work+Sans:wght@600&family=Karla:wght@600&family=Roboto+Slab:wght@600&family=Dosis:wght@600&family=Oxygen:wght@600&family=Teko:wght@600&family=Staatliches&family=Yanone+Kaffeesatz:wght@600&family=Khula:wght@600&family=Comfortaa:wght@600&family=Mukta:wght@600&family=PT+Sans+Caption&family=Varela+Round&family=Saira+Stencil+One&family=Amatic+SC:wght@700&family=Bree+Serif&family=Cairo:wght@600&family=Fira+Sans:wght@600&family=Inconsolata&family=Jost:wght@600&family=Kanit:wght@600&family=Lexend:wght@600&family=M+PLUS+Rounded+1c:wght@700&family=Nunito+Sans:wght@600&family=Pacifico&family=Questrial&family=Righteous&family=Satisfy&family=Spectral:wght@600&family=Zilla+Slab:wght@600&family=Yeseva+One&family=Actor&family=BenchNine:wght@700&family=Chela+One&family=Domine:wght@600&family=EB+Garamond:wght@600&family=Fjalla+One&family=Glegoo&family=Heebo:wght@600&family=Imprima&family=Jura:wght@600&family=Kaushan+Script&family=Lato:wght@600&family=Megrim&family=News+Cycle:wght@600&family=Oranienbaum&family=Pathway+Extreme&family=Recursive:wght@600&family=Secular+One&family=Tinos:wght@600&family=Ubuntu:wght@600&family=Vollkorn:wght@600&family=Yantramanav:wght@600&family=Acme&family=Bangers&family=Concert+One&family=Dancing+Script&family=Eagle+Lake&family=Fascinate+Inline&family=Galada&family=Hanalei&family=Italianno&family=Just+Another+Hand&family=Kelly+Slab&family=Loved+by+the+King&family=Monoton&family=Neonderthaw&family=Odibee+Sans&family=Passion+One&family=Quattrocento:wght@600&family=Ranchers&family=Shojumaru&family=Unica+One&family=Viga&display=swap" rel="stylesheet">
 
   <style>
     body {
-      margin: 0;
       background-color: #000;
       color: white;
       font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding-top: 50px;
+      padding: 40px;
     }
 
-    .title {
-      font-size: 5rem;
+    .font-sample {
+      font-size: 2.5rem;
       font-weight: bold;
-      letter-spacing: 0.3rem;
-      text-align: center;
+      letter-spacing: 0.25rem;
       margin-bottom: 30px;
     }
 
-    .a { color: #FF0000; } /* Red */
-    .e { color: #FFFF00; } /* Yellow */
-    .i { color: #00FF00; } /* Green */
-    .o { color: #FF00FF; } /* Magenta */
-    .u { color: #0000FF; } /* Blue */
-
-    select {
-      font-size: 1.2rem;
-      padding: 5px;
-      margin-bottom: 40px;
-    }
+    .a { color: #FF0000; }
+    .e { color: #FFFF00; }
+    .i { color: #00FF00; }
+    .o { color: #FF00FF; }
+    .u { color: #0000FF; }
   </style>
 </head>
 <body>
 
-  <select id="fontSelector">
-    <option disabled selected>Select a font</option>
-  </select>
-
-  <div id="logo" class="title">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
+  <!-- Font samples will be inserted below -->
   <script>
-    const select = document.getElementById('fontSelector');
-    fonts.forEach(f => {
-      const name = f.split(':')[0].replace(/\+/g, ' ');
-      const opt = document.createElement('option');
-      opt.value = name;
-      opt.textContent = name;
-      select.appendChild(opt);
-    });
+    const fonts = [
+      "Poppins", "Montserrat", "Raleway", "Playfair Display", "Cinzel",
+      "Cormorant Garamond", "Fredoka", "Quicksand", "Bebas Neue", "Anton",
+      "Archivo Black", "Abril Fatface", "Exo 2", "Josefin Sans", "Barlow",
+      "Alata", "Libre Baskerville", "Major Mono Display", "Sora", "Rubik",
+      "Merriweather", "Oswald", "Nunito", "Work Sans", "Karla",
+      "Roboto Slab", "Dosis", "Oxygen", "Teko", "Staatliches",
+      "Yanone Kaffeesatz", "Khula", "Comfortaa", "Mukta", "PT Sans Caption",
+      "Varela Round", "Saira Stencil One", "Amatic SC", "Bree Serif", "Cairo",
+      "Fira Sans", "Inconsolata", "Jost", "Kanit", "Lexend",
+      "M PLUS Rounded 1c", "Nunito Sans", "Pacifico", "Questrial", "Righteous",
+      "Satisfy", "Spectral", "Zilla Slab", "Yeseva One", "Actor",
+      "BenchNine", "Chela One", "Domine", "EB Garamond", "Fjalla One",
+      "Glegoo", "Heebo", "Imprima", "Jura", "Kaushan Script",
+      "Lato", "Megrim", "News Cycle", "Oranienbaum", "Pathway Extreme",
+      "Recursive", "Secular One", "Tinos", "Ubuntu", "Vollkorn",
+      "Yantramanav", "Acme", "Bangers", "Concert One", "Dancing Script",
+      "Eagle Lake", "Fascinate Inline", "Galada", "Hanalei", "Italianno",
+      "Just Another Hand", "Kelly Slab", "Loved by the King", "Monoton",
+      "Neonderthaw", "Odibee Sans", "Passion One", "Quattrocento",
+      "Ranchers", "Shojumaru", "Unica One", "Viga"
+    ];
 
-    select.addEventListener('change', () => {
-      document.getElementById('logo').style.fontFamily = `"${select.value}", sans-serif`;
+    fonts.forEach(font => {
+      const container = document.createElement('div');
+      container.className = 'font-sample';
+      container.style.fontFamily = `'${font}', sans-serif`;
+      container.innerHTML = '<span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>';
+      document.body.appendChild(container);
     });
   </script>
 
