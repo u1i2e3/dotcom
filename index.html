@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou.vip Full Showcase</title>
+  <title>aeiou Color Showcase</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -21,46 +21,22 @@
       background-color: #000;
       color: white;
       font-family: sans-serif;
-      padding: 30px;
-    }
-
-    /* Top Logo */
-    .main-logo {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      margin-bottom: 60px;
+      min-height: 100vh;
+      gap: 40px;
     }
 
-    .logo {
-      font-size: 5rem;
+    .title {
+      font-size: 4rem;
       font-weight: bold;
       letter-spacing: 0.3rem;
       text-align: center;
     }
 
-    .a { color: #FF0000; }   /* Red */
-    .e { color: #FFFF00; }   /* Yellow (Red + Green) */
-    .i { color: #00FF00; }   /* Green */
-    .o { color: #FF00FF; }   /* Magenta (Red + Blue) */
-    .u { color: #0000FF; }   /* Blue */
-
-    /* Font Sections */
-    .section {
-      margin-bottom: 30px;
-    }
-
-    .label {
-      font-size: 1rem;
-      color: #999;
-      margin-bottom: 5px;
-    }
-
-    .title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      letter-spacing: 0.15rem;
-    }
-
+    /* Font Styles */
     .poppins      { font-family: 'Poppins', sans-serif; }
     .montserrat   { font-family: 'Montserrat', sans-serif; }
     .raleway      { font-family: 'Raleway', sans-serif; }
@@ -70,65 +46,52 @@
     .fredoka      { font-family: 'Fredoka', sans-serif; }
     .quicksand    { font-family: 'Quicksand', sans-serif; }
     .bebas        { font-family: 'Bebas Neue', sans-serif; }
+
+    /* Color Classes for Each Letter */
+    .a { color: #FF0000; }   /* Red */
+    .e { color: #FFFF00; }   /* Yellow (Red + Green) */
+    .i { color: #00FF00; }   /* Green */
+    .o { color: #FF00FF; }   /* Magenta (Red + Blue) */
+    .u { color: #0000FF; }   /* Blue */
   </style>
 </head>
 <body>
 
-  <!-- AEIOU logo with RGB-based logic -->
-  <div class="main-logo">
-    <div class="logo">
-      <span class="a">a</span>
-      <span class="e">e</span>
-      <span class="i">i</span>
-      <span class="o">o</span>
-      <span class="u">u</span>.vip
-    </div>
+  <!-- Each title version with colored vowels -->
+  <div class="title poppins">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <!-- Font Style Preview -->
-  <div class="section">
-    <div class="label">Poppins (Modern / Minimal)</div>
-    <div class="title poppins">aeiou.vip</div>
+  <div class="title montserrat">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="section">
-    <div class="label">Montserrat (Modern / Tech)</div>
-    <div class="title montserrat">aeiou.vip</div>
+  <div class="title raleway">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="section">
-    <div class="label">Raleway (Elegant / Lightweight)</div>
-    <div class="title raleway">aeiou.vip</div>
+  <div class="title playfair">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="section">
-    <div class="label">Playfair Display (Luxury / Serif)</div>
-    <div class="title playfair">aeiou.vip</div>
+  <div class="title cinzel">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="section">
-    <div class="label">Cinzel (Classic / Prestige)</div>
-    <div class="title cinzel">aeiou.vip</div>
+  <div class="title cormorant">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="section">
-    <div class="label">Cormorant Garamond (Luxury Serif)</div>
-    <div class="title cormorant">aeiou.vip</div>
+  <div class="title fredoka">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="section">
-    <div class="label">Fredoka (Playful / Rounded)</div>
-    <div class="title fredoka">aeiou.vip</div>
+  <div class="title quicksand">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
-  <div class="section">
-    <div class="label">Quicksand (Smooth / Modern)</div>
-    <div class="title quicksand">aeiou.vip</div>
-  </div>
-
-  <div class="section">
-    <div class="label">Bebas Neue (Bold / All Caps)</div>
-    <div class="title bebas">aeiou.vip</div>
+  <div class="title bebas">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
   </div>
 
 </body>
