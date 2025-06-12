@@ -2,29 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou – Air Force 1 Viewer</title>
+  <title>aeiou with Supreme Font</title>
 
-  <!-- Supreme font from Fontshare -->
-  <link href="https://api.fontshare.com/v2/css?f[]=supreme@700&display=swap" rel="stylesheet">
+  <!-- Properly registered Supreme font -->
+  <link href="https://api.fontshare.com/v2/css?f[]=supreme@400,700&display=swap" rel="stylesheet">
 
   <style>
     body {
-      margin: 0;
       background-color: #000;
-      color: white;
-      font-family: 'Supreme', sans-serif;
+      margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 40px;
-      padding-top: 40px;
+      justify-content: center;
+      height: 100vh;
     }
 
-    .aeiou {
-      font-size: 4rem;
+    .logo {
+      font-family: 'Supreme', sans-serif;
       font-weight: 700;
-      letter-spacing: 0.3rem;
-      text-align: center;
+      font-size: 5rem;
+      letter-spacing: 0.05rem;
     }
 
     .a { color: #FF0000; }
@@ -32,39 +30,17 @@
     .i { color: #00FF00; }
     .o { color: #FF00FF; }
     .u { color: #0000FF; }
-
-    .viewer {
-      width: 90%;
-      max-width: 800px;
-      height: 500px;
-      border: none;
-    }
-
-    @media (max-width: 640px) {
-      .aeiou {
-        font-size: 2.5rem;
-      }
-
-      .viewer {
-        height: 300px;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <!-- Colored AEIOU title using Supreme font -->
-  <div class="aeiou">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  <div class="logo">
+    <span class="a">a</span>
+    <span class="e">e</span>
+    <span class="i">i</span>
+    <span class="o">o</span>
+    <span class="u">u</span>
   </div>
-
-  <!-- Sketchfab 3D model of Nike Air Force 1 -->
-  <iframe
-    title="Nike Air Force 1 3D Model"
-    class="viewer"
-    src="https://sketchfab.com/models/b580fb8a337e4609807185f1fab2f305/embed"
-    allow="autoplay; fullscreen; vr">
-  </iframe>
 
 </body>
 </html>
