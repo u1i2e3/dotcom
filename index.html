@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>100 Fonts AEIOU Showcase</title>
+  <title>aeiou – Professional Font Showcase</title>
 
-  <!-- Load 100 Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Montserrat:wght@600&family=Raleway:wght@600&family=Playfair+Display:wght@700&family=Cinzel:wght@700&family=Cormorant+Garamond:wght@600&family=Fredoka:wght@600&family=Quicksand:wght@600&family=Bebas+Neue&family=Anton&family=Archivo+Black&family=Abril+Fatface&family=Exo+2:wght@600&family=Josefin+Sans:wght@600&family=Barlow:wght@600&family=Alata&family=Libre+Baskerville&family=Major+Mono+Display&family=Sora:wght@600&family=Rubik:wght@600&family=Merriweather:wght@700&family=Oswald:wght@600&family=Nunito:wght@600&family=Work+Sans:wght@600&family=Karla:wght@600&family=Roboto+Slab:wght@600&family=Dosis:wght@600&family=Oxygen:wght@600&family=Teko:wght@600&family=Staatliches&family=Yanone+Kaffeesatz:wght@600&family=Khula:wght@600&family=Comfortaa:wght@600&family=Mukta:wght@600&family=PT+Sans+Caption&family=Varela+Round&family=Saira+Stencil+One&family=Amatic+SC:wght@700&family=Bree+Serif&family=Cairo:wght@600&family=Fira+Sans:wght@600&family=Inconsolata&family=Jost:wght@600&family=Kanit:wght@600&family=Lexend:wght@600&family=M+PLUS+Rounded+1c:wght@700&family=Nunito+Sans:wght@600&family=Pacifico&family=Questrial&family=Righteous&family=Satisfy&family=Spectral:wght@600&family=Zilla+Slab:wght@600&family=Yeseva+One&family=Actor&family=BenchNine:wght@700&family=Chela+One&family=Domine:wght@600&family=EB+Garamond:wght@600&family=Fjalla+One&family=Glegoo&family=Heebo:wght@600&family=Imprima&family=Jura:wght@600&family=Kaushan+Script&family=Lato:wght@600&family=Megrim&family=News+Cycle:wght@600&family=Oranienbaum&family=Pathway+Extreme&family=Recursive:wght@600&family=Secular+One&family=Tinos:wght@600&family=Ubuntu:wght@600&family=Vollkorn:wght@600&family=Yantramanav:wght@600&family=Acme&family=Bangers&family=Concert+One&family=Dancing+Script&family=Eagle+Lake&family=Fascinate+Inline&family=Galada&family=Hanalei&family=Italianno&family=Just+Another+Hand&family=Kelly+Slab&family=Loved+by+the+King&family=Monoton&family=Neonderthaw&family=Odibee+Sans&family=Passion+One&family=Quattrocento:wght@600&family=Ranchers&family=Shojumaru&family=Unica+One&family=Viga&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Sora:wght@600&family=Jost:wght@600&family=M+PLUS+Rounded+1c:wght@700&family=Barlow:wght@600&family=Quicksand:wght@600&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -13,57 +13,64 @@
       color: white;
       font-family: sans-serif;
       padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
     }
 
     .font-sample {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       font-weight: bold;
-      letter-spacing: 0.25rem;
-      margin-bottom: 30px;
+      letter-spacing: 0.3rem;
+      text-align: center;
     }
 
-    .a { color: #FF0000; }
-    .e { color: #FFFF00; }
-    .i { color: #00FF00; }
-    .o { color: #FF00FF; }
-    .u { color: #0000FF; }
+    .label {
+      color: #888;
+      font-size: 1rem;
+      margin-bottom: -20px;
+    }
+
+    /* Color Logic */
+    .a { color: #FF0000; }   /* Red */
+    .e { color: #FFFF00; }   /* Yellow */
+    .i { color: #00FF00; }   /* Green */
+    .o { color: #FF00FF; }   /* Magenta */
+    .u { color: #0000FF; }   /* Blue */
   </style>
 </head>
 <body>
 
-  <!-- Font samples will be inserted below -->
-  <script>
-    const fonts = [
-      "Poppins", "Montserrat", "Raleway", "Playfair Display", "Cinzel",
-      "Cormorant Garamond", "Fredoka", "Quicksand", "Bebas Neue", "Anton",
-      "Archivo Black", "Abril Fatface", "Exo 2", "Josefin Sans", "Barlow",
-      "Alata", "Libre Baskerville", "Major Mono Display", "Sora", "Rubik",
-      "Merriweather", "Oswald", "Nunito", "Work Sans", "Karla",
-      "Roboto Slab", "Dosis", "Oxygen", "Teko", "Staatliches",
-      "Yanone Kaffeesatz", "Khula", "Comfortaa", "Mukta", "PT Sans Caption",
-      "Varela Round", "Saira Stencil One", "Amatic SC", "Bree Serif", "Cairo",
-      "Fira Sans", "Inconsolata", "Jost", "Kanit", "Lexend",
-      "M PLUS Rounded 1c", "Nunito Sans", "Pacifico", "Questrial", "Righteous",
-      "Satisfy", "Spectral", "Zilla Slab", "Yeseva One", "Actor",
-      "BenchNine", "Chela One", "Domine", "EB Garamond", "Fjalla One",
-      "Glegoo", "Heebo", "Imprima", "Jura", "Kaushan Script",
-      "Lato", "Megrim", "News Cycle", "Oranienbaum", "Pathway Extreme",
-      "Recursive", "Secular One", "Tinos", "Ubuntu", "Vollkorn",
-      "Yantramanav", "Acme", "Bangers", "Concert One", "Dancing Script",
-      "Eagle Lake", "Fascinate Inline", "Galada", "Hanalei", "Italianno",
-      "Just Another Hand", "Kelly Slab", "Loved by the King", "Monoton",
-      "Neonderthaw", "Odibee Sans", "Passion One", "Quattrocento",
-      "Ranchers", "Shojumaru", "Unica One", "Viga"
-    ];
+  <div class="label">Nunito Sans</div>
+  <div class="font-sample" style="font-family: 'Nunito Sans', sans-serif;">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  </div>
 
-    fonts.forEach(font => {
-      const container = document.createElement('div');
-      container.className = 'font-sample';
-      container.style.fontFamily = `'${font}', sans-serif`;
-      container.innerHTML = '<span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>';
-      document.body.appendChild(container);
-    });
-  </script>
+  <div class="label">Sora</div>
+  <div class="font-sample" style="font-family: 'Sora', sans-serif;">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  </div>
+
+  <div class="label">Jost</div>
+  <div class="font-sample" style="font-family: 'Jost', sans-serif;">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  </div>
+
+  <div class="label">M PLUS Rounded 1c</div>
+  <div class="font-sample" style="font-family: 'M PLUS Rounded 1c', sans-serif;">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  </div>
+
+  <div class="label">Barlow</div>
+  <div class="font-sample" style="font-family: 'Barlow', sans-serif;">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  </div>
+
+  <div class="label">Quicksand</div>
+  <div class="font-sample" style="font-family: 'Quicksand', sans-serif;">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  </div>
 
 </body>
 </html>
