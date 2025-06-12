@@ -1,0 +1,21 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+
+.a { color: #FF0000; }   /* Red */
+.e { color: #00FF00; }   /* Green */
+.i { color: #0000FF; }   /* Blue */
+.o { color: #8000FF; }   /* Violet (R+B) */
+.u { color: #00FFFF; }   /* Cyan (G+B) */
