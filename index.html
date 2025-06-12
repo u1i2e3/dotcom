@@ -2,105 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou – Satoshi & Supreme Fonts</title>
-
-  <!-- Load fonts from Fontshare -->
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,700&f[]=supreme@400,900&display=swap" rel="stylesheet">
-
+  <title>Air Force 1 3D Model</title>
   <style>
     body {
       background-color: #000;
-      color: white;
       margin: 0;
-      padding: 60px 20px;
-      font-size: 18px;
-      line-height: 1.6;
+      padding: 20px;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 80px;
+      height: 100vh;
     }
 
-    .section {
-      max-width: 700px;
-      text-align: center;
+    .viewer {
+      width: 600px;
+      height: 400px;
+      border: none;
     }
 
-    .title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 30px;
-      text-align: center;
+    @media (max-width: 640px) {
+      .viewer {
+        width: 100%;
+        height: 300px;
+      }
     }
-
-    .satoshi .title {
-      font-family: 'Satoshi', sans-serif;
-    }
-
-    .supreme .title {
-      font-family: 'Supreme', sans-serif;
-    }
-
-    .logo {
-      font-size: 5rem;
-      font-weight: 700;
-      letter-spacing: 0.3rem;
-      margin-bottom: 20px;
-    }
-
-    .satoshi .logo {
-      font-family: 'Satoshi', sans-serif;
-    }
-
-    .supreme .logo {
-      font-family: 'Supreme', sans-serif;
-    }
-
-    .description {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    .satoshi .description {
-      font-family: 'Satoshi', sans-serif;
-      font-weight: 300;
-    }
-
-    .supreme .description {
-      font-family: 'Supreme', sans-serif;
-      font-weight: 400;
-    }
-
-    .a { color: #FF0000; }
-    .e { color: #FFFF00; }
-    .i { color: #00FF00; }
-    .o { color: #FF00FF; }
-    .u { color: #0000FF; }
   </style>
 </head>
 <body>
 
-  <!-- Satoshi Section -->
-  <div class="section satoshi">
-    <div class="title">aeiou – using Satoshi</div>
-    <div class="logo">
-      <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-    </div>
-    <div class="description">
-      The Nike Air Force 1 Low combines timeless style with a street-smart edge. Finished in smooth white leather and a chunky sole, it delivers clean energy with every step. Durable. Legendary. Iconic.
-    </div>
-  </div>
-
-  <!-- Supreme Section -->
-  <div class="section supreme">
-    <div class="title">aeiou – using Supreme</div>
-    <div class="logo">
-      <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-    </div>
-    <div class="description">
-      Air Force 1s are more than sneakers — they’re a cultural statement. The minimalist silhouette, subtle stitching, and comfort-forward build make it the go-to choice for both sneakerheads and clean-fit purists.
-    </div>
-  </div>
+  <!-- Sketchfab viewer with Nike Air Force 1 model (free, CC‑Attribution) -->
+  <iframe
+    title="Nike Air Force 1 3D Model"
+    class="viewer"
+    src="https://sketchfab.com/models/b580fb8a337e4609807185f1fab2f305/embed"
+    allow="autoplay; fullscreen; vr">
+  </iframe>
 
 </body>
 </html>
