@@ -2,80 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou Font Comparison</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Sora:wght@600&family=Jost:wght@700&family=M+PLUS+Rounded+1c:wght@800&family=Barlow:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
-
+  <title>aeiou in Comic Sans</title>
   <style>
     body {
       background-color: #000;
       color: white;
-      font-family: sans-serif;
-      padding: 40px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 50px;
+      height: 100vh;
     }
 
-    .font-sample {
-      font-size: 4rem;
+    .logo {
+      font-size: 5rem;
       font-weight: bold;
-      letter-spacing: 0.2rem;
-      text-align: center;
+      letter-spacing: 0.3rem;
     }
 
-    .label {
-      color: #888;
-      font-size: 1.1rem;
-      margin-bottom: -15px;
-      font-style: italic;
-    }
-
-    .a { color: #FF0000; }
-    .e { color: #FFFF00; }
-    .i { color: #00FF00; }
-    .o { color: #FF00FF; }
-    .u { color: #0000FF; }
-
-    /* Force display if fonts fail */
-    @font-face {
-      font-family: fallback;
-      src: local("Arial");
-    }
+    .a { color: #FF0000; }   /* Red */
+    .e { color: #FFFF00; }   /* Yellow */
+    .i { color: #00FF00; }   /* Green */
+    .o { color: #FF00FF; }   /* Magenta */
+    .u { color: #0000FF; }   /* Blue */
   </style>
 </head>
 <body>
 
-  <div class="label">Nunito Sans</div>
-  <div class="font-sample" style="font-family: 'Nunito Sans', fallback, sans-serif;">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="label">Sora</div>
-  <div class="font-sample" style="font-family: 'Sora', fallback, sans-serif;">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="label">Jost</div>
-  <div class="font-sample" style="font-family: 'Jost', fallback, sans-serif;">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="label">M PLUS Rounded 1c</div>
-  <div class="font-sample" style="font-family: 'M PLUS Rounded 1c', fallback, sans-serif;">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="label">Barlow</div>
-  <div class="font-sample" style="font-family: 'Barlow', fallback, sans-serif;">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
-  </div>
-
-  <div class="label">Quicksand</div>
-  <div class="font-sample" style="font-family: 'Quicksand', fallback, sans-serif;">
-    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+  <div class="logo">
+    <span class="a">a</span>
+    <span class="e">e</span>
+    <span class="i">i</span>
+    <span class="o">o</span>
+    <span class="u">u</span>
   </div>
 
 </body>
