@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou with Supreme Font</title>
-
-  <!-- Properly registered Supreme font -->
-  <link href="https://api.fontshare.com/v2/css?f[]=supreme@400,700&display=swap" rel="stylesheet">
+  <title>aeiou – Local Supreme Font</title>
 
   <style>
+    @font-face {
+      font-family: 'Supreme';
+      src: url('Supreme-Bold.otf') format('opentype');
+      font-weight: bold;
+    }
+
     body {
       background-color: #000;
+      color: white;
       margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .logo {
       font-family: 'Supreme', sans-serif;
-      font-weight: 700;
+      font-weight: bold;
       font-size: 5rem;
-      letter-spacing: 0.05rem;
+      letter-spacing: 0.1rem;
     }
 
     .a { color: #FF0000; }
