@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>aeiou – Satoshi vs Supreme</title>
+  <title>aeiou – Satoshi & Supreme Fonts</title>
 
-  <!-- Proper Fontshare CDN link -->
+  <!-- Load fonts from Fontshare -->
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,700&f[]=supreme@400,900&display=swap" rel="stylesheet">
 
   <style>
@@ -18,7 +18,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 100px;
+      gap: 80px;
     }
 
     .section {
@@ -26,15 +26,39 @@
       text-align: center;
     }
 
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .satoshi .title {
+      font-family: 'Satoshi', sans-serif;
+    }
+
+    .supreme .title {
+      font-family: 'Supreme', sans-serif;
+    }
+
     .logo {
       font-size: 5rem;
+      font-weight: 700;
       letter-spacing: 0.3rem;
       margin-bottom: 20px;
     }
 
     .satoshi .logo {
       font-family: 'Satoshi', sans-serif;
-      font-weight: 700;
+    }
+
+    .supreme .logo {
+      font-family: 'Supreme', sans-serif;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
 
     .satoshi .description {
@@ -42,19 +66,9 @@
       font-weight: 300;
     }
 
-    .supreme .logo {
-      font-family: 'Supreme', sans-serif;
-      font-weight: 900;
-    }
-
     .supreme .description {
       font-family: 'Supreme', sans-serif;
       font-weight: 400;
-    }
-
-    .description {
-      font-size: 1.2rem;
-      opacity: 0.9;
     }
 
     .a { color: #FF0000; }
@@ -66,8 +80,9 @@
 </head>
 <body>
 
-  <!-- SATOSHI FONT -->
+  <!-- Satoshi Section -->
   <div class="section satoshi">
+    <div class="title">aeiou – using Satoshi</div>
     <div class="logo">
       <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
     </div>
@@ -76,8 +91,9 @@
     </div>
   </div>
 
-  <!-- SUPREME FONT -->
+  <!-- Supreme Section -->
   <div class="section supreme">
+    <div class="title">aeiou – using Supreme</div>
     <div class="logo">
       <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
     </div>
