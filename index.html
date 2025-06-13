@@ -13,14 +13,49 @@
       color: #fff;
     }
     header {
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
       padding: 2rem 1rem;
       background-color: #111;
+    }
+    .aeiou-title {
       font-size: 2.5rem;
       font-weight: 700;
       letter-spacing: 0.1rem;
       text-transform: lowercase;
     }
+    .kicks-vertical {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+      text-transform: lowercase;
+    }
+    .kicks-vertical span {
+      line-height: 1;
+    }
+    .kicks-vertical .i {
+      color: #0000FF; /* Same as i from aeiou */
+    }
+    .logo {
+      font-size: 3rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .rgb .a { color: #FF0000; }
+    .rgb .e { color: #00FF00; }
+    .rgb .i { color: #0000FF; }
+    .rgb .o { color: #00FFFF; }
+    .rgb .u { color: #FF00FF; }
+    .ryb .a { color: #FF0000; }
+    .ryb .e { color: #FFFF00; }
+    .ryb .i { color: #0000FF; }
+    .ryb .o { color: #00FFFF; }
+    .ryb .u { color: #FF00FF; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -57,7 +92,26 @@
   </style>
 </head>
 <body>
-  <header>aeiou kicks</header>
+  <header>
+    <div class="aeiou-title">aeiou</div>
+    <div class="kicks-vertical">
+      <span>k</span>
+      <span class="i">i</span>
+      <span>c</span>
+      <span>k</span>
+      <span>s</span>
+    </div>
+  </header>
+
+  <div class="logo rgb">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+    <div style="font-size: 1rem; color: #888;">(Additive RGB)</div>
+  </div>
+
+  <div class="logo ryb">
+    <span class="a">a</span><span class="e">e</span><span class="i">i</span><span class="o">o</span><span class="u">u</span>
+    <div style="font-size: 1rem; color: #888;">(Subtractive RYB)</div>
+  </div>
 
   <section class="grid">
     <div class="shoe-card">
@@ -87,3 +141,4 @@
 
 </body>
 </html>
+
