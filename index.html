@@ -13,11 +13,9 @@
       color: #fff;
     }
     header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem 1rem;
+      position: relative;
+      text-align: center;
+      padding: 2rem 1rem 4rem;
       background-color: #111;
     }
     .aeiou-title {
@@ -25,21 +23,23 @@
       font-weight: 700;
       letter-spacing: 0.1rem;
       text-transform: lowercase;
+      position: relative;
+      display: inline-block;
     }
-    .kicks-vertical {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 2.5rem;
-      font-weight: 700;
-      letter-spacing: 0.1rem;
-      text-transform: lowercase;
+    .kicks-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(0, -50%);
+      font-size: 0.8rem;
+      font-weight: 500;
+      line-height: 1.2rem;
     }
-    .kicks-vertical span {
-      line-height: 1;
+    .kicks-overlay span {
+      display: block;
     }
-    .kicks-vertical .i {
-      color: #0000FF; /* Same as i from aeiou */
+    .kicks-overlay .i {
+      color: #0000FF; /* Match i from aeiou */
     }
     .logo {
       font-size: 3rem;
@@ -93,13 +93,15 @@
 </head>
 <body>
   <header>
-    <div class="aeiou-title">aeiou</div>
-    <div class="kicks-vertical">
-      <span>k</span>
-      <span class="i">i</span>
-      <span>c</span>
-      <span>k</span>
-      <span>s</span>
+    <div class="aeiou-title">
+      aeiou
+      <div class="kicks-overlay">
+        <span>k</span>
+        <span class="i">i</span>
+        <span>c</span>
+        <span>k</span>
+        <span>s</span>
+      </div>
     </div>
   </header>
 
@@ -141,4 +143,3 @@
 
 </body>
 </html>
-
