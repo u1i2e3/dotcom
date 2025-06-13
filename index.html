@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>aeiou – Local Supreme Font</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEIOU Kicks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    @font-face {
-      font-family: 'Supreme';
-      src: url('Supreme-Bold.otf') format('opentype');
-      font-weight: bold;
-    }
-
     body {
-      background-color: #000;
-      color: white;
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Jost', sans-serif;
+      background-color: #000;
+      color: #fff;
     }
-
-    .logo {
-      font-family: 'Supreme', sans-serif;
-      font-weight: bold;
-      font-size: 5rem;
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      font-size: 2.5rem;
+      font-weight: 700;
       letter-spacing: 0.1rem;
     }
-
-    .a { color: #FF0000; }
-    .e { color: #FFFF00; }
-    .i { color: #00FF00; }
-    .o { color: #FF00FF; }
-    .u { color: #0000FF; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .shoe-card {
+      background-color: #1a1a1a;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .model-container {
+      width: 100%;
+      height: 300px;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      background: #000;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .shoe-title {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 1rem 0 0.5rem;
+    }
+    .price {
+      font-size: 1rem;
+      color: #0f0;
+    }
   </style>
 </head>
 <body>
+  <header>AEIOU KICKS</header>
 
-  <div class="logo">
-    <span class="a">a</span>
-    <span class="e">e</span>
-    <span class="i">i</span>
-    <span class="o">o</span>
-    <span class="u">u</span>
-  </div>
+  <section class="grid">
+    <div class="shoe-card">
+      <div class="model-container">
+        <iframe title="Nike Air Force 1" src="https://sketchfab.com/models/b580fb8a337e4609807185f1fab2f305/embed" allow="autoplay; fullscreen; vr"></iframe>
+      </div>
+      <div class="shoe-title">Nike Air Force 1 Low</div>
+      <div class="price">$129.99</div>
+    </div>
+
+    <div class="shoe-card">
+      <div class="model-container">
+        <iframe title="Adidas Yeezy 350" src="https://sketchfab.com/models/76dc4c4faadf4a569ebd949708ba2bff/embed" allow="autoplay; fullscreen; vr"></iframe>
+      </div>
+      <div class="shoe-title">Adidas Yeezy Boost 350</div>
+      <div class="price">$299.99</div>
+    </div>
+
+    <div class="shoe-card">
+      <div class="model-container">
+        <iframe title="Jordan 1" src="https://sketchfab.com/models/f7b885823e074cd0a279be08bd6b49f5/embed" allow="autoplay; fullscreen; vr"></iframe>
+      </div>
+      <div class="shoe-title">Air Jordan 1 Retro High</div>
+      <div class="price">$219.99</div>
+    </div>
+  </section>
 
 </body>
 </html>
